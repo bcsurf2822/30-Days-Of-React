@@ -44,5 +44,16 @@ console.log("Number of:", itCompanies[0]);
 console.log("First, mid, last", itCompanies[0], itCompanies[Math.floor(itLength/2)], itCompanies[itLength - 1]);
 
 itCompanies.forEach(function (each) {
-  console.log("Print each", each)
+   console.log(each)
+});
+
+let emptySent = "All To Upper";
+ itCompanies.forEach(function (each) {
+  // console.log( each.toUpperCase());
+  let newSent = each.toUpperCase();
+  console.log(newSent)
+
 })
+
+const bigCompanies = itCompanies.slice(0, -1).join(", ") + ", and " + itCompanies.slice(-1) + " are big it companies";
+console.log("Big Companies:" , bigCompanies);
